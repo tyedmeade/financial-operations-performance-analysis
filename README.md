@@ -1,74 +1,38 @@
-# Financial Operations Performance Analysis
+# Financial Operations Performance Analysis (SQL + Power BI)
 
-End-to-end SQL and Power BI analytics project simulating a financial operations workflow across loan funding, regional performance, operational bottlenecks, and customer payment risk.
+This project simulates an operational lending environment where SQL and Power BI are used to monitor loan performance, identify operational bottlenecks, evaluate regional efficiency, and assess customer payment risk.
+
+Rather than focusing only on dashboard creation, this project connects executive KPIs to the operational processes that drive them, including approval efficiency, documentation delays, regional performance, and customer repayment behavior.
+
+## Dashboard Preview
 
 ![Executive Overview](powerbi/dashboard_screenshots/executive_overview.png)
 
----
-
-## Project Overview
-
-This project demonstrates how operational lending data can be transformed into executive reporting using PostgreSQL and Power BI.
-
-The workflow includes:
-
-- Data quality validation
-- SQL data cleaning and analytical views
-- KPI development
-- Operational performance analysis
-- Regional benchmarking
-- Customer payment risk analysis
-- Executive dashboard reporting
-
----
-
 ## Business Questions
 
-- How is loan funding performance changing over time?
-- Which regions demonstrate the strongest operational performance?
-- Where are operational bottlenecks slowing the funding process?
+- How is overall loan funding performance changing over time?
+- Which regions operate most efficiently throughout the lending process?
+- Where do operational bottlenecks delay application processing?
 - Which customer segments demonstrate elevated payment risk?
+- What operational improvements could increase funding performance?
 
----
+## Project Workflow
 
-## Dashboard Pages
+- Created raw operational tables for customers, loan applications, payments, regions, and support cases.
+- Validated data quality issues such as duplicates, orphan records, missing values, and inconsistent statuses.
+- Built cleaned SQL views for reporting and analysis.
+- Developed KPI views for funding performance, regional efficiency, bottlenecks, payment quality, and customer risk.
+- Designed Power BI dashboards to summarize business performance and support recommendations.
 
-### Executive Loan Performance
-Tracks funding volume, approval performance, funding rate, and month-over-month operational trends.
-
-### Regional Performance
-Compares funding efficiency, approval performance, and pending documentation across regions.
-
-### Operational Bottlenecks
-Identifies workflow delays, applications stuck over 10 days, and backlog severity by department.
-
-### Customer Risk & Retention
-Evaluates payment behavior, retention trends, acquisition channels, and customer credit risk.
-
----
-
-## SQL Workflow
-
-- Create raw operational tables
-- Validate data quality
-- Build cleaned analytical views
-- Develop KPI reporting views
-- Connect Power BI dashboards
-- Generate business recommendations
-
----
-
-## Tools
+## Tools Used
 
 - PostgreSQL
 - SQL
 - Power BI
-- CTEs
-- Window Functions
+- DAX
+- Data Modeling
 - KPI Development
-- Business Intelligence
-
----
+- Business Intelligence Reporting
 
 ## Repository Structure
 
@@ -77,10 +41,3 @@ sql/
 insights/
 powerbi/dashboard_screenshots/
 README.md
-```
-
----
-
-**Author**
-
-Tyler Edmeade
